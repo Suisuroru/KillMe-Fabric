@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "killme",
+  "version": "${version}",
+  "name": "KillMe",
+  "description": "",
+  "authors": [],
+  "contact": {},
+  "license": "unlicense",
+  "icon": "assets/killme/icon.png",
+  "environment": "server",
+  "entrypoints": {
+    "fabric-datagen": [
+      "fun.bm.killme.client.KillmeDataGenerator"
+    ],
+    "main": [
+      "fun.bm.killme.Killme"
+    ]
+  },
+  "mixins": [
+    "killme.mixins.json",
+    {
+      "config": "killme.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric-api": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
