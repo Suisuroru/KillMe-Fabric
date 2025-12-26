@@ -28,7 +28,7 @@ public class Killme implements ModInitializer {
         }
 
         ServerPlayerEntity player = source.getPlayer();
-        player.kill(player.getEntityWorld());
+        player.kill();
         source.sendFeedback(() -> Text.literal("已自杀"), true);
         return 1;
     }
