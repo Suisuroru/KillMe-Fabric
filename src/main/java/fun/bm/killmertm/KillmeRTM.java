@@ -1,20 +1,20 @@
-package fun.bm.killme;
+package fun.bm.killmertm;
 
+import com.mojang.brigadier.context.CommandContext;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.command.v2.CommandRegistrationCallback;
 import net.minecraft.server.command.CommandManager;
 import net.minecraft.server.command.ServerCommandSource;
 import net.minecraft.server.network.ServerPlayerEntity;
 import net.minecraft.text.Text;
-import com.mojang.brigadier.context.CommandContext;
 
-public class Killme implements ModInitializer {
+public class KillmeRTM implements ModInitializer {
 
     @Override
     public void onInitialize() {
         CommandRegistrationCallback.EVENT.register((dispatcher, registryAccess, environment) -> {
             dispatcher.register(CommandManager.literal("killme")
-                .executes(this::executeKill)
+                    .executes(this::executeKill)
             );
         });
     }

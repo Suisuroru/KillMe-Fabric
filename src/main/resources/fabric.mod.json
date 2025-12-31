@@ -7,14 +7,14 @@
   "authors": [],
   "contact": {},
   "license": "unlicense",
-  "icon": "assets/killme/icon.png",
+  "icon": "assets/killmertm/icon.png",
   "environment": "server",
   "entrypoints": {
     "fabric-datagen": [
-      "fun.bm.killme.client.KillmeDataGenerator"
+      "fun.bm.killmertm.client.KillmeRTMDataGenerator"
     ],
     "main": [
-      "fun.bm.killme.Killme"
+      "fun.bm.killmertm.KillmeRTM"
     ]
   },
   "mixins": [

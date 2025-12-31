@@ -1,9 +1,9 @@
-package fun.bm.killme.client;
+package fun.bm.killmertm.client;
 
 import net.fabricmc.fabric.api.datagen.v1.DataGeneratorEntrypoint;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
 
-public class KillmeDataGenerator implements DataGeneratorEntrypoint {
+public class KillmeRTMDataGenerator implements DataGeneratorEntrypoint {
 
     @Override
     public void onInitializeDataGenerator(FabricDataGenerator fabricDataGenerator) {
